@@ -6,16 +6,10 @@
     <bpmn:messageFlow id="MessageFlow_1l790as" sourceRef="Task_1moa767" targetRef="Task_1ym38p1" />
     <bpmn:messageFlow id="MessageFlow_1pigyec" sourceRef="Task_1f2etqk" targetRef="StartEvent_09t0nnk" />
     <bpmn:messageFlow id="MessageFlow_141omg0" sourceRef="Task_0jkcorz" targetRef="Task_1f2etqk" />
-    <bpmn:messageFlow id="MessageFlow_1xw3812" sourceRef="Task_0yersvk" targetRef="StartEvent_14yaz69" />
+    <bpmn:messageFlow id="MessageFlow_1688mrq" sourceRef="Task_1ym38p1" targetRef="StartEvent_14yaz69" />
   </bpmn:collaboration>
   <bpmn:process id="Process_1" isExecutable="false">
-    <bpmn:sequenceFlow id="SequenceFlow_1almy7e" sourceRef="Task_1ym38p1" targetRef="Task_0yersvk" />
-    <bpmn:task id="Task_1ym38p1" name="Pobranie znaczników z XMLa">
-      <bpmn:outgoing>SequenceFlow_1almy7e</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Task_0yersvk" name="Dodanie znaczników do bazy danych">
-      <bpmn:incoming>SequenceFlow_1almy7e</bpmn:incoming>
-    </bpmn:task>
+    <bpmn:task id="Task_1ym38p1" name="Pobranie znaczników z XMLa" />
     <bpmn:task id="Task_1f2etqk" name="Pobranie z bazy danych o lokalizacji aktywnych użytkowników" />
   </bpmn:process>
   <bpmn:process id="Process_0g49kfn" isExecutable="false">
@@ -147,18 +141,6 @@
           <dc:Bounds x="474" y="503.5" width="0" height="13" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Task_0yersvk_di" bpmnElement="Task_0yersvk">
-        <dc:Bounds x="596.0722154222766" y="685" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_1almy7e_di" bpmnElement="SequenceFlow_1almy7e">
-        <di:waypoint xsi:type="dc:Point" x="522" y="725" />
-        <di:waypoint xsi:type="dc:Point" x="557" y="725" />
-        <di:waypoint xsi:type="dc:Point" x="557" y="725" />
-        <di:waypoint xsi:type="dc:Point" x="596" y="725" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="572" y="718.5" width="0" height="13" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Task_1f2etqk_di" bpmnElement="Task_1f2etqk">
         <dc:Bounds x="640" y="549.6034271725827" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -192,14 +174,6 @@
           <dc:Bounds x="992.3712021136064" y="415" width="0" height="13" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="MessageFlow_1xw3812_di" bpmnElement="MessageFlow_1xw3812">
-        <di:waypoint xsi:type="dc:Point" x="696" y="725" />
-        <di:waypoint xsi:type="dc:Point" x="985" y="725" />
-        <di:waypoint xsi:type="dc:Point" x="985" y="410" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="840.5" y="703.5" width="0" height="13" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Task_1ipdsmy_di" bpmnElement="Task_1ipdsmy">
         <dc:Bounds x="913.3712021136064" y="181.58652575957728" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -264,6 +238,14 @@
           <dc:Bounds x="963" y="120.58652575957728" width="0" height="13" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="MessageFlow_1688mrq_di" bpmnElement="MessageFlow_1688mrq">
+        <di:waypoint xsi:type="dc:Point" x="522" y="725" />
+        <di:waypoint xsi:type="dc:Point" x="985" y="725" />
+        <di:waypoint xsi:type="dc:Point" x="985" y="410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="753.5" y="703.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
