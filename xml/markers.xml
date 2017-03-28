@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="markers.xsl"?>
 <markers>
 
     <marker id="1" name="Kino Nowe Horyzonty" lat="51.109463" lng="17.026126">
@@ -30,7 +31,7 @@
     </marker>
 
     <marker id="8" name="Park Szczytnicki" lat="51.116266" lng="17.078183">
-        <description>VPark Szczytnicki – jeden z największych parków Wrocławia zajmujący powierzchnię około 100 hektarów. Położony jest na wschód od Starej Odry, na terenie dawnej wsi Szczytniki, włączonej w obręb miasta w 1868 roku.</description>
+        <description>Park Szczytnicki – jeden z największych parków Wrocławia zajmujący powierzchnię około 100 hektarów. Położony jest na wschód od Starej Odry, na terenie dawnej wsi Szczytniki, włączonej w obręb miasta w 1868 roku.</description>
     </marker>
 
     <marker id="9" name="Hala Stulecia" lat="51.106877" lng="17.077281">
